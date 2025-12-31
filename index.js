@@ -12,7 +12,7 @@ const PORT = 8000;
 
 app.use(express.urlencoded({extended:false}))
 app.use(cors({
-    origin: "http://localhost:3000",  
+    origin: "https://try-cart-frontend.vercel.app",  
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true                
 }));
