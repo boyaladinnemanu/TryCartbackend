@@ -15,7 +15,8 @@ const PORT = 8000;
 // ✅ allow both localhost + vercel frontend
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://try-cart-frontend.vercel.app"
+  "https://try-cart-frontend.vercel.app",
+  /\.vercel\.app$/ 
 ];
 
 app.use(express.urlencoded({ extended: false }));
